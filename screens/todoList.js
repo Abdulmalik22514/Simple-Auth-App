@@ -51,7 +51,7 @@ export default function TodoList() {
       >
         {item.isReminding ? <View style={styles.setReminder} /> : null}
         <View style={styles.tasks}>
-          <View style={{ width: 250 }}>
+          <View style={{ width: 300 }}>
             <Text style={styles.task}>{item.task}</Text>
             <Text style={{ fontSize: 15 }}>{item.day}</Text>
           </View>
@@ -205,9 +205,9 @@ const styles = StyleSheet.create({
   },
   reminder: {
     fontSize: 17,
-    textAlign: "justify",
+    // textAlign: "justify",
     width: 80,
-    lineHeight: 21,
+    // lineHeight: 21,
   },
   tracker: {
     fontSize: 30,
